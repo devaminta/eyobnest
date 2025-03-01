@@ -9,7 +9,7 @@
     "init": "pnpm run ; pnpm env:init ; pnpm run database:migration:run",
     "build": "nest build",
     "format": "prettier --write \"src/**/*.ts\" \"test/**/*.ts\"",
-    "start": "dotenv -e env/.env.local -- nest start",
+    "start": "NODE_OPTIONS='--max-old-space-size=1024' dotenv -e env/.env.local -- nest start",
     "dev": "dotenv -e env/.env.local -- nest start --watch",
     "start:debug": "dotenv -e env/.env.local -- nest start --debug --watch",
     "start:prod": "dotenv -e env/.env.production -- node dist/main",
