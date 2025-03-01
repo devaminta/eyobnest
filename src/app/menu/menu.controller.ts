@@ -12,7 +12,6 @@ import {
 import { ApiBody, ApiOperation, ApiResponse, ApiTags } from '@nestjs/swagger';
 import { MenuService } from './menu.service';
 import { CreateMenuDto, UpdateMenuDto } from './dto/menu.input.dto';
-import { MenuItem } from '@prisma/client';
 import { IMenuItem } from './dto/menu';
 
 @Controller('menu')
