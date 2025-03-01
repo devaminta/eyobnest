@@ -2,8 +2,8 @@ export interface IMenuItem {
     id: string;
     name: string;
     parentId?: string | null;
-    parent?: IMenuItem | null;
-    children?: IMenuItem[];
+    parent?: any | null;
+    children?: any[];
     actions?: string | null;
     createdAt: Date;
     updatedAt: Date;
