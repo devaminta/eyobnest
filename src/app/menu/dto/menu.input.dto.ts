@@ -1,5 +1,5 @@
 import { IsString, IsOptional, IsUUID, IsArray, ValidateNested } from 'class-validator';
-import { ApiProperty, ApiPropertyOptional } from '@nestjs/swagger';
+import {  ApiProperty, ApiPropertyOptional } from '@nestjs/swagger';
 
 export class CreateMenuDto {
     @ApiProperty({ description: 'Title of the menu item' })
